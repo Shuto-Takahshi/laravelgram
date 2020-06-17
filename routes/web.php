@@ -14,6 +14,8 @@
 // use Illuminate\Routing\Route;
 
 Route::get('/', 'PostsController@index');
+Route::get('posts/new', 'PostsController@new');
+Route::post('posts/', 'PostsController@store');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
