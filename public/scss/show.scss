@@ -1,0 +1,42 @@
+// margin: 40px 0px; 上下、左右
+.profile-wrap{
+  margin: 40px 0px;
+}
+
+// border-radiusが50%で正円
+.round-img{
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+}
+
+// font-weight: bold; 太字
+// line-height: 26px; 行の高さ
+.edit-profile-btn {
+  margin: 15px 0 0 15px;
+  font-weight: bold;
+  height: 26px;
+  line-height: 26px;
+  padding: 0 26px;
+  border-color: #dbdbdb;
+  font-size: 14px;
+}
+
+// background-repeat: no-repeat; 繰り返し表示されるか
+// background-color: transparent; 透明
+// !important; 最優先
+// border: none; 枠線なし
+// &:hover {cursor: pointer;} マウスがポインターになる
+.setting {
+  background-image: url("/images/parts4.png");
+  background-repeat: no-repeat;
+  height: 24px;
+  width: 24px;
+  background-color: transparent;
+  margin: 18px 0 0 10px;
+  background-size: 22px!important;
+  border: none;
+  &:hover {
+    cursor: pointer;
+  }
+}

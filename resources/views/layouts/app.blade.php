@@ -4,6 +4,9 @@
     <title>{{ config('app.name', 'Laravelgram') }}</title>
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
+
+    {{-- スマホ対応 --}}
+    <meta name="viewport" content="width=divice-width, initial-scale=1">
     
     <!--bootstrap-->
     <!--CSS -->
@@ -16,7 +19,9 @@
   <body>
     @yield('navbar')
        
-    @yield('content')
+    <div class="container">
+      @yield('content')
+    </div>
 
     @yield('footer')
 
