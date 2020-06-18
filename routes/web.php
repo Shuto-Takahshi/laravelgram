@@ -17,6 +17,10 @@ Route::get('/', 'PostsController@index');
 Route::get('/posts/new', 'PostsController@new');
 Route::post('/posts', 'PostsController@store');
 Route::get('/postsdelete/{post_id}', 'PostsController@destroy');
+
+Route::get('/posts/{post_id}/likes', 'LikesController@store');
+Route::get('/posts/{post_id}', 'LikesController@destroy');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
